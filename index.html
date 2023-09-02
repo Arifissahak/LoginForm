@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password-validate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ---------------------css-file------------------- -->
+    <link rel="stylesheet" href="style.css">
+    <!-- -------------------------------------------------------- -->
+</head>
+<body>
+    <div class="box">
+        <div class="inputbox">
+            <input type="password" id="psrd" placeholder="password" onkeyup ="checkPsrd(this.value)">
+            <span id="tooglebtn"></span>
+        </div>
+        <div class="validation">
+            <ul>
+                <li id="lower">At least one lowercase charecter</li>
+                <li id="upper">At least one upperrcase charecter</li>
+                <li id="number">At least one number</li>
+                <li id="special">At least one special charecter</li>
+                <li id="length">At least 8 charecter</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
